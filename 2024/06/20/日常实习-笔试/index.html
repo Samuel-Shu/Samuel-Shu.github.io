@@ -1,0 +1,735 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/shuCoding.jpeg">
+  <link rel="icon" href="/img/shuCoding.jpeg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="北京华顺信安go后端笔试题目此次笔试一共7道题目，整体难度偏易，涉及到数据库、计算机网络、测试相关、系统原理、数据结构与算法1、简述静态测试与动态测试的区别1、测试部分的不同：静态测试是指测试不运行的部分：只是检查和审阅,如规范测试、软件模型测试、文档测试等。动态测试是通常意义上的测试，也就是运行和使用软件。 2、测试方式不同：静态测试，通过评审文档、阅读代码等方式测试软件称为静态测试，通过运行程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="北京华顺信安go后端开发实习--笔试">
+<meta property="og:url" content="http://example.com/2024/06/20/%E6%97%A5%E5%B8%B8%E5%AE%9E%E4%B9%A0-%E7%AC%94%E8%AF%95/index.html">
+<meta property="og:site_name" content="Samuel_Shu的个人博客">
+<meta property="og:description" content="北京华顺信安go后端笔试题目此次笔试一共7道题目，整体难度偏易，涉及到数据库、计算机网络、测试相关、系统原理、数据结构与算法1、简述静态测试与动态测试的区别1、测试部分的不同：静态测试是指测试不运行的部分：只是检查和审阅,如规范测试、软件模型测试、文档测试等。动态测试是通常意义上的测试，也就是运行和使用软件。 2、测试方式不同：静态测试，通过评审文档、阅读代码等方式测试软件称为静态测试，通过运行程">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-06-20T14:16:20.000Z">
+<meta property="article:modified_time" content="2024-06-20T15:07:51.061Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="日常实习--笔试">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>北京华顺信安go后端开发实习--笔试 - Samuel_Shu的个人博客</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":100,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"Nkeduq0Z0rTq0xZWtDtWm4dX-gzGzoHsz","app_key":"xcoQLl0vdZSWBHwZaYkZ4vAX","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="北京华顺信安go后端开发实习--笔试"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-06-20 22:16" pubdate>
+          2024年6月20日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.6k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          14 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">北京华顺信安go后端开发实习--笔试</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="北京华顺信安go后端笔试题目"><a href="#北京华顺信安go后端笔试题目" class="headerlink" title="北京华顺信安go后端笔试题目"></a>北京华顺信安go后端笔试题目</h2><h4 id="此次笔试一共7道题目，整体难度偏易，涉及到数据库、计算机网络、测试相关、系统原理、数据结构与算法"><a href="#此次笔试一共7道题目，整体难度偏易，涉及到数据库、计算机网络、测试相关、系统原理、数据结构与算法" class="headerlink" title="此次笔试一共7道题目，整体难度偏易，涉及到数据库、计算机网络、测试相关、系统原理、数据结构与算法"></a>此次笔试一共7道题目，整体难度偏易，涉及到<code>数据库</code>、<code>计算机网络</code>、<code>测试相关</code>、<code>系统原理</code>、<code>数据结构与算法</code></h4><h5 id="1、简述静态测试与动态测试的区别"><a href="#1、简述静态测试与动态测试的区别" class="headerlink" title="1、简述静态测试与动态测试的区别"></a>1、简述静态测试与动态测试的区别</h5><p><code>1、测试部分的不同：静态测试是指测试不运行的部分：只是检查和审阅,如规范测试、软件模型测试、文档测试等。动态测试是通常意义上的测试，也就是运行和使用软件。</code></p>
+<p><code>2、测试方式不同：静态测试，通过评审文档、阅读代码等方式测试软件称为静态测试，通过运行程序测试软件称为动态测试。</code></p>
+<p><code>3、测试方法不同：静态测试是指不用执行程序的测试，它主要采取方案—代码走查、技术评审、代码审查的方法对软件产品进行测试。动态测试主要通过构造测试实例、执行程序、分析程序的输出结果这三种方法来对软件进行测试。</code></p>
+<p> <code>静态测试主要包括：（1）代码检查：代码会审、代码走查、桌面检查；（2）静态结构分析；（3）代码质量度量。</code><br><code> 动态测试主要包括：（1）黑盒测试：又称功能测试。这种方法把被测软件看成黑盒，在不考虑软件内部结构和特性的情况下测试   软件的外部特性。（2）白盒测试：又称结构测试。这种方法把被测软件看成白盒，根据程序的内部结构和逻辑设计来设计测试实   例，对程序的路径和过程进行测试。</code></p>
+<h5 id="2、简述POST请求与GET请求的区别"><a href="#2、简述POST请求与GET请求的区别" class="headerlink" title="2、简述POST请求与GET请求的区别"></a>2、简述POST请求与GET请求的区别</h5><p><code>1、get请求一般是去取获取数据（其实也可以提交，但常见的是获取数据）；post请求一般是去提交数据。</code></p>
+<p><code>2、get因为参数会放在url中，所以隐私性，安全性较差，请求的数据长度是有限制的，不同的浏览器和服务器不同，一般限制在 2~8K 之间，更加常见的是 1k 以内；post请求是没有的长度限制，请求数据是放在body中；</code></p>
+<p><code>3、get请求刷新服务器或者回退没有影响，post请求回退时会重新提交数据请求。</code></p>
+<p><code>4、get请求可以被缓存，post请求不会被缓存。</code></p>
+<p><code>5、get请求会被保存在浏览器历史记录当中，post不会。get请求可以被收藏为书签，因为参数就是url中，但post不能。它的参数不在url中。</code></p>
+<p><code>6、get请求只能进行url编码（appliacation-x-www-form-urlencoded）,post请求支持多种（multipart/form-data等）。</code></p>
+<h5 id="3、简述数据中事务的特点（特性）"><a href="#3、简述数据中事务的特点（特性）" class="headerlink" title="3、简述数据中事务的特点（特性）"></a>3、简述数据中事务的特点（特性）</h5><p><code>事务的四大特性：1、原子性(Atomicity)；2、一致性(Consistency)；3、隔离性(Isolation)；4、持久性(Durability)</code></p>
+<p><code> 原子性:</code></p>
+<p><code>一个事务必须被视为一个不可分割的最小工作单元，整个事务中的所有操作要么全部提交成功，要么 全部失败回滚，对于一个事务来说，不可能只执行其中的一部分操作，这就是事务的原子性</code></p>
+<p><code> 一致性:</code></p>
+<p><code>数据库总是从一个一致性的状态转换到另一个一致性的状态。（在前面的例子中，一致性确保了，即 使在转账过程中系统崩溃，支票账户中也不会损失200美元，因为事务最终没有提交，所以事务中所做 的修改也不会保存到数据库中。）</code></p>
+<p><code> 隔离性:</code><br><code>通常来说，一个事务所做的修改操作在提交事务之前，对于其他事务来说是不可见的。（在前面的例 子中，当执行完第三条语句、第四条语句还未开始时，此时有另外的一个账户汇总程序开始运行，则 其看到支票帐户的余额并没有被减去200美元。）</code></p>
+<p> <code>持久性:</code><br><code>一旦事务提交，则其所做的修改会永久保存到数据库。</code></p>
+<h5 id="4、现在有一个表结构如下：表明是orders，字段为：name（姓名）type为varchar，age（年龄）type为int，birthday（出生日期）type为datetime，status（是否注册的状态）type为varchar。找出出生日期在2022-01-01之后的并且注册状态是已注册的用户信息，并且按照时间顺序从前往后排序，写出对应的SQL语句"><a href="#4、现在有一个表结构如下：表明是orders，字段为：name（姓名）type为varchar，age（年龄）type为int，birthday（出生日期）type为datetime，status（是否注册的状态）type为varchar。找出出生日期在2022-01-01之后的并且注册状态是已注册的用户信息，并且按照时间顺序从前往后排序，写出对应的SQL语句" class="headerlink" title="4、现在有一个表结构如下：表明是orders，字段为：name（姓名）type为varchar，age（年龄）type为int，birthday（出生日期）type为datetime，status（是否注册的状态）type为varchar。找出出生日期在2022-01-01之后的并且注册状态是已注册的用户信息，并且按照时间顺序从前往后排序，写出对应的SQL语句"></a>4、现在有一个表结构如下：表明是<code>orders</code>，字段为：<code>name</code>（姓名）<code>type</code>为<code>varchar</code>，<code>age</code>（年龄）<code>type</code>为<code>int</code>，<code>birthday</code>（出生日期）<code>type</code>为<code>datetime</code>，<code>status</code>（是否注册的状态）<code>type</code>为<code>varchar</code>。找出出生日期在<code>2022-01-01</code>之后的并且注册状态是已注册的用户信息，并且按照时间顺序从前往后排序，写出对应的<code>SQL</code>语句</h5><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">FROM</span> orders <span class="hljs-keyword">WHERE</span> (birthday <span class="hljs-operator">&gt;</span> <span class="hljs-string">&#x27;2022-01-01&#x27;</span> <span class="hljs-keyword">AND</span> status <span class="hljs-operator">=</span> <span class="hljs-string">&#x27;已注册&#x27;</span>) <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> birthday <span class="hljs-keyword">ASC</span>;<br></code></pre></td></tr></table></figure>
+
+<h5 id="5、简述进程与协程的区别，并说明它们是如何通信的"><a href="#5、简述进程与协程的区别，并说明它们是如何通信的" class="headerlink" title="5、简述进程与协程的区别，并说明它们是如何通信的"></a>5、简述进程与协程的区别，并说明它们是如何通信的</h5><p><code>1、进程是资源分配和拥有的基本单位，而线程是程序执行的基本单位； 2、进程拥有更多的资源，包括cpu资源、内存资源、文件资源和字柄，而线程拥有的资源包括程序计数器、寄存器、栈和状态字； 3、对于并发性而言，不同进程之间切换实现并发，各自占有CPU实现并行；而一个进程内部的多个线程并发执行； 4、而在通信方面，进程间通信需要借助操作系统；而线程间可以直接读取进程数据段（如全局变量）来进行通信。</code></p>
+<h5 id="6、说明下面程序运行的结果"><a href="#6、说明下面程序运行的结果" class="headerlink" title="6、说明下面程序运行的结果"></a>6、说明下面程序运行的结果</h5><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">tmp</span><span class="hljs-params">(i <span class="hljs-type">int</span>)</span></span> <span class="hljs-type">int</span> &#123;<br>    <span class="hljs-keyword">if</span> i == <span class="hljs-number">0</span> &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span><br>    &#125; <span class="hljs-keyword">else</span> &#123;<br>        <span class="hljs-keyword">return</span> *tmp(i<span class="hljs-number">-1</span>)<br>    &#125;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    fmt.Println(tmp(<span class="hljs-number">5</span>))<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><code>你是否会认为这个结果为1？？？但实际上，它的执行结果应该是：执行错误！！！</code></p>
+<p><code>错误原因是*tmp(i-1)并不是一个int类型的，而对于tmp函数而言，所传入的参数必须是int类型的，因此这里会发生错误！</code></p>
+<h5 id="7、算法题：现在给定一个数组nums，它里面的值由1-100里的数随机组成（即并不一定所有数都包含），nums的长度为0-10-32，现在需要判断nums中不包含哪些1-100的数字，并将其输出"><a href="#7、算法题：现在给定一个数组nums，它里面的值由1-100里的数随机组成（即并不一定所有数都包含），nums的长度为0-10-32，现在需要判断nums中不包含哪些1-100的数字，并将其输出" class="headerlink" title="7、算法题：现在给定一个数组nums，它里面的值由1-100里的数随机组成（即并不一定所有数都包含），nums的长度为0-10^32，现在需要判断nums中不包含哪些1-100的数字，并将其输出"></a>7、算法题：现在给定一个数组<code>nums</code>，它里面的值由<code>1-100</code>里的数随机组成（即并不一定所有数都包含），<code>nums</code>的长度为<code>0-10^32</code>，现在需要判断<code>nums</code>中不包含哪些<code>1-100</code>的数字，并将其输出</h5><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs go"><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">Search</span><span class="hljs-params">(nums []<span class="hljs-type">int</span>)</span></span> []<span class="hljs-type">int</span> &#123;<br>    <br>    tmpMap := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-type">int</span>]<span class="hljs-type">int</span>, <span class="hljs-number">100</span>)<br>    <span class="hljs-keyword">for</span> k, v := <span class="hljs-keyword">range</span> nums &#123;<br>        <span class="hljs-keyword">if</span> _, ok := tmpMap[v]; !ok &#123;<br>            tmpMap[v] = k<br>        &#125;<br>    &#125;<br>    <br>    res := <span class="hljs-built_in">make</span>([]<span class="hljs-type">int</span>, <span class="hljs-number">0</span>)<br>    <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(tmpMap) == <span class="hljs-number">0</span> &#123;<br>        <span class="hljs-keyword">return</span> res<br>    &#125;<br>    <span class="hljs-keyword">for</span> i := <span class="hljs-number">1</span>; i &lt;=<span class="hljs-number">100</span>; i++ &#123;<br>        <span class="hljs-keyword">if</span> _, ok := tmp[i]; !ok &#123;<br>            res = <span class="hljs-built_in">append</span>(res, i)<br>        &#125;<br>    &#125;<br>    <span class="hljs-keyword">return</span> res<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E6%97%A5%E5%B8%B8%E5%AE%9E%E4%B9%A0-%E7%AC%94%E8%AF%95/" class="print-no-link">#日常实习--笔试</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>北京华顺信安go后端开发实习--笔试</div>
+      <div>http://example.com/2024/06/20/日常实习-笔试/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>John Doe</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年6月20日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"Nkeduq0Z0rTq0xZWtDtWm4dX-gzGzoHsz","appKey":"xcoQLl0vdZSWBHwZaYkZ4vAX","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         次
+      </span>
+    
+    
+
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
